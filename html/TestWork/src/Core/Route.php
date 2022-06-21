@@ -49,7 +49,6 @@ class Route
         }
         $controller_name_with_namespace = "\TestWork\Controller\\".$controller_name;
         $controller = new $controller_name_with_namespace;
-        echo $action_name;
         $action = $action_name;
 
         if(method_exists($controller, $action))
