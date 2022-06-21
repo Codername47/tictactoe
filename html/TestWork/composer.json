@@ -1,0 +1,16 @@
+{
+    "name": "dread/test-work",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "TestWork\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Codername47",
+            "email": "Codername47@yandex.ru"
+        }
+    ],
+    "require": {}
+}

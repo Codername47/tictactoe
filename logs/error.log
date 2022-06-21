@@ -1,0 +1,161 @@
+2022/06/20 13:52:17 [error] 8104#6832: *1 CreateFile() "E:\testWork/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2022/06/20 13:54:40 [error] 8104#6832: *2 CreateFile() "E:\testWork/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2022/06/20 23:10:19 [error] 10488#10056: *3 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/20 23:14:28 [error] 10488#10056: *5 CreateFile() "E:\testWork/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/20 23:14:41 [error] 10488#10056: *7 CreateFile() "E:\testWork/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/20 23:17:51 [notice] 14368#15344: signal process started
+2022/06/20 23:18:04 [error] 14032#14584: *1 CreateFile() "E:\testWork/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/21 00:12:30 [notice] 14964#17052: signal process started
+2022/06/21 00:46:43 [error] 13092#15412: *8 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "FirstController" not found in E:\testWork\html\TestWork\public\index.php:7
+Stack trace:
+#0 {main}
+  thrown in E:\testWork\html\TestWork\public\index.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /e HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 00:47:08 [error] 13092#15412: *8 FastCGI sent in stderr: "PHP Parse error:  syntax error, unexpected end of file in E:\testWork\html\TestWork\public\index.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /e HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 00:47:21 [error] 13092#15412: *8 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "TestWork\Controller\FirstController" not found in E:\testWork\html\TestWork\public\index.php:7
+Stack trace:
+#0 {main}
+  thrown in E:\testWork\html\TestWork\public\index.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /e HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 00:54:33 [error] 13092#15412: *12 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "FirstController" not found in E:\testWork\html\TestWork\public\index.php:7
+Stack trace:
+#0 {main}
+  thrown in E:\testWork\html\TestWork\public\index.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /e HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:01:29 [error] 3356#1440: *10 FastCGI sent in stderr: "PHP Warning:  Undefined array key "action" in E:\testWork\html\TestWork\public\index.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:01:54 [error] 3356#1440: *10 FastCGI sent in stderr: "PHP Warning:  Undefined array key "action" in E:\testWork\html\TestWork\public\index.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:14:25 [error] 3356#1440: *20 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "TestWork\Core\Route" not found in E:\testWork\html\TestWork\public\index.php:7
+Stack trace:
+#0 {main}
+  thrown in E:\testWork\html\TestWork\public\index.php on line 7" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:15:31 [error] 3356#1440: *22 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "TestWork\Core\Route" not found in E:\testWork\html\TestWork\public\index.php:6
+Stack trace:
+#0 {main}
+  thrown in E:\testWork\html\TestWork\public\index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:15:35 [error] 3356#1440: *22 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "TestWork\Core\Route" not found in E:\testWork\html\TestWork\public\index.php:6
+Stack trace:
+#0 {main}
+  thrown in E:\testWork\html\TestWork\public\index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:15:39 [error] 3356#1440: *22 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "TestWork\Core\Route" not found in E:\testWork\html\TestWork\public\index.php:6
+Stack trace:
+#0 {main}
+  thrown in E:\testWork\html\TestWork\public\index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:16:53 [error] 3356#1440: *22 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "Main" not found in E:\testWork\html\TestWork\src\Core\Route.php:55
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:17:43 [error] 3356#1440: *29 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "Main" not found in E:\testWork\html\TestWork\src\Core\Route.php:55
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:19:36 [error] 3356#1440: *31 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "Main" not found in E:\testWork\html\TestWork\src\Core\Route.php:55
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:20:01 [error] 3356#1440: *34 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "MainController" not found in E:\testWork\html\TestWork\src\Core\Route.php:55
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:21:15 [error] 3356#1440: *37 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "MainController" not found in E:\testWork\html\TestWork\src\Core\Route.php:55
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:21:58 [error] 3356#1440: *37 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "MainController" not found in E:\testWork\html\TestWork\src\Core\Route.php:56
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:23:36 [error] 3356#1440: *41 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "MainController" not found in E:\testWork\html\TestWork\src\Core\Route.php:56
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:24:57 [error] 3356#1440: *43 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "MainController" not found in E:\testWork\html\TestWork\src\Core\Route.php:56
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:25:02 [error] 3356#1440: *45 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "MainController" not found in E:\testWork\html\TestWork\src\Core\Route.php:56
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:25:02 [error] 3356#1440: *45 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "favicon.ico" not found in E:\testWork\html\TestWork\src\Core\Route.php:56
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/"
+2022/06/21 09:25:17 [error] 3356#1440: *45 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "MainController" not found in E:\testWork\html\TestWork\src\Core\Route.php:56
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:25:31 [error] 3356#1440: *45 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "MainController" not found in E:\testWork\html\TestWork\src\Core\Route.php:55
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:25:58 [error] 3356#1440: *45 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "MainController" not found in E:\testWork\html\TestWork\src\Core\Route.php:56
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:26:13 [error] 3356#1440: *45 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "MainController" not found in E:\testWork\html\TestWork\src\Core\Route.php:56
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:26:22 [error] 3356#1440: *45 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "MainController" not found in E:\testWork\html\TestWork\src\Core\Route.php:56
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:26:44 [error] 3356#1440: *45 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "MainController" not found in E:\testWork\html\TestWork\src\Core\Route.php:55
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:27:08 [error] 3356#1440: *45 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "FirstController" not found in E:\testWork\html\TestWork\src\Core\Route.php:55
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /FirstController HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:29:17 [error] 3356#1440: *55 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "FirstController" not found in E:\testWork\html\TestWork\src\Core\Route.php:55
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /FirstController HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:29:39 [error] 3356#1440: *55 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "FirstController" not found in E:\testWork\html\TestWork\src\Core\Route.php:55
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /FirstController HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:29:57 [error] 3356#1440: *55 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "MainController" not found in E:\testWork\html\TestWork\src\Core\Route.php:55
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:32:38 [error] 3356#1440: *59 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "\TestWork\Controller\route" not found in E:\testWork\html\TestWork\src\Core\Route.php:55
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /route HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:35:17 [error] 3356#1440: *65 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "\TestWork\Controller\de" not found in E:\testWork\html\TestWork\src\Core\Route.php:54
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 54" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /de HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:36:02 [error] 3356#1440: *65 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "\TestWork\Controller\de" not found in E:\testWork\html\TestWork\src\Core\Route.php:55
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 55" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /de HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 09:51:21 [error] 3356#1440: *81 FastCGI sent in stderr: "PHP Warning:  require_once(E:\testWork\html\TestWork\srcView/index.php): Failed to open stream: No such file or directory in E:\testWork\html\TestWork\src\Controller\MainController.php on line 16
+PHP Fatal error:  Uncaught Error: Failed opening required 'E:\testWork\html\TestWork\srcView/index.php' (include_path='.;C:\php\pear') in E:\testWork\html\TestWork\src\Controller\MainController.php:16
+Stack trace:
+#0 E:\testWork\html\TestWork\src\Core\Route.php(58): TestWork\Controller\MainController->index()
+#1 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
+#2 {main}
+  thrown in E:\testWork\html\TestWork\src\Controller\MainController.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
