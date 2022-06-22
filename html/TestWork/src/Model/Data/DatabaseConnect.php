@@ -22,6 +22,10 @@ class DatabaseConnect
 
         return self::$instance;
     }
+    public function getConnection()
+    {
+        return $this->conn;
+    }
     public function connect()
     {
 
@@ -34,7 +38,7 @@ class DatabaseConnect
         try{
             $this->conf = DBConfig::getConfig();
             $this->conn = new PDO("mysql:host=".$this->conf['host'], $this->conf['username'], $this->conf['password']);
-            echo "Database is available\n";
+            //echo "Database is available\n";
         } catch (PDOException $e) {
             echo "Database error: " . $e->getMessage();
             die();
@@ -63,7 +67,7 @@ class DatabaseConnect
                 $this->DBCreator = new DatabaseCreate($this->conn);
             $this->DBCreator->createOnlyTables();
         } catch (PDOException $e) {
-            echo "tables are Already created";
+            //echo "tables are Already created";
         }
     }
 }

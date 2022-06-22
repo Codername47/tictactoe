@@ -159,3 +159,134 @@ Stack trace:
 #1 E:\testWork\html\TestWork\public\index.php(6): TestWork\Core\Route::start()
 #2 {main}
   thrown in E:\testWork\html\TestWork\src\Controller\MainController.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 12:53:51 [error] 3356#1440: *87 FastCGI sent in stderr: "PHP Warning:  The magic method TestWork\Model\Data\DatabaseConnect::__wakeup() must have public visibility in E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 12:54:55 [error] 3356#1440: *87 FastCGI sent in stderr: "PHP Warning:  The magic method TestWork\Model\Data\DatabaseConnect::__wakeup() must have public visibility in E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 12:54:57 [error] 3356#1440: *91 FastCGI sent in stderr: "PHP Warning:  The magic method TestWork\Model\Data\DatabaseConnect::__wakeup() must have public visibility in E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 12:55:14 [error] 3356#1440: *91 FastCGI sent in stderr: "PHP Warning:  The magic method TestWork\Model\Data\DatabaseConnect::__wakeup() must have public visibility in E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 12:56:32 [error] 3356#1440: *94 FastCGI sent in stderr: "PHP Warning:  The magic method TestWork\Model\Data\DatabaseConnect::__wakeup() must have public visibility in E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 12:56:36 [error] 3356#1440: *94 FastCGI sent in stderr: "PHP Warning:  The magic method TestWork\Model\Data\DatabaseConnect::__wakeup() must have public visibility in E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 13:17:49 [error] 3356#1440: *97 FastCGI sent in stderr: "PHP Warning:  The magic method TestWork\Model\Data\DatabaseConnect::__wakeup() must have public visibility in E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 13:17:51 [error] 3356#1440: *97 FastCGI sent in stderr: "PHP Warning:  The magic method TestWork\Model\Data\DatabaseConnect::__wakeup() must have public visibility in E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 14:34:41 [error] 3356#1440: *119 FastCGI sent in stderr: "PHP Warning:  Undefined array key "queries" in E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php on line 37
+PHP Warning:  Undefined array key "tables" in E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php on line 38
+PHP Warning:  foreach() argument must be of type array|object, null given in E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php on line 40" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 14:35:10 [error] 3356#1440: *119 FastCGI sent in stderr: "PHP Warning:  Undefined array key "queries" in E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php on line 38
+PHP Warning:  Undefined array key "tables" in E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php on line 39
+PHP Warning:  foreach() argument must be of type array|object, null given in E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php on line 40" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 14:37:00 [error] 3356#1440: *119 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';
+ALTER TABLE `tictactoe`.`guild` 
+ADD CONSTRAINT `parent_guild`
+  FOREIGN KE' at line 1 in E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php:42
+Stack trace:
+#0 E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php(42): PDO->exec('CREATE TABLE `t...')
+#1 E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php(22): TestWork\Model\Data\DatabaseCreate->createTables()
+#2 E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php(54): TestWork\Model\Data\DatabaseCreate->create()
+#3 E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php(29): TestWork\Model\Data\DatabaseConnect->checkDatabaseExistance()
+#4 E:\testWork\html\TestWork\public\index.php(8): TestWork\Model\Data\DatabaseConnect->connect()
+#5 {main}
+  thrown in E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 14:37:54 [error] 3356#1440: *119 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';
+ALTER TABLE `tictactoe`.`guild` 
+ADD CONSTRAINT `parent_guild`
+  FOREIGN KE' at line 1 in E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php:42
+Stack trace:
+#0 E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php(42): PDO->exec('CREATE TABLE `t...')
+#1 E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php(22): TestWork\Model\Data\DatabaseCreate->createTables()
+#2 E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php(54): TestWork\Model\Data\DatabaseCreate->create()
+#3 E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php(29): TestWork\Model\Data\DatabaseConnect->checkDatabaseExistance()
+#4 E:\testWork\html\TestWork\public\index.php(8): TestWork\Model\Data\DatabaseConnect->connect()
+#5 {main}
+  thrown in E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 14:42:55 [error] 3356#1440: *131 FastCGI sent in stderr: "PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';
+ALTER TABLE `tictactoe`.`guild` 
+ADD CONSTRAINT `parent_guild`
+  FOREIGN KE' at line 1 in E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php:42
+Stack trace:
+#0 E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php(42): PDO->exec('ALTER TABLE `ti...')
+#1 E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php(22): TestWork\Model\Data\DatabaseCreate->createTables()
+#2 E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php(54): TestWork\Model\Data\DatabaseCreate->create()
+#3 E:\testWork\html\TestWork\src\Model\Data\DatabaseConnect.php(29): TestWork\Model\Data\DatabaseConnect->checkDatabaseExistance()
+#4 E:\testWork\html\TestWork\public\index.php(8): TestWork\Model\Data\DatabaseConnect->connect()
+#5 {main}
+  thrown in E:\testWork\html\TestWork\src\Model\Data\DatabaseCreate.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 16:49:44 [error] 3356#1440: *227 FastCGI sent in stderr: "PHP Warning:  Undefined array key "difficulty" in E:\testWork\html\TestWork\src\View\Game\gameView.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "POST /FirstController HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/FirstController"
+2022/06/21 16:49:47 [error] 3356#1440: *227 FastCGI sent in stderr: "PHP Warning:  Undefined array key "difficulty" in E:\testWork\html\TestWork\src\View\Game\gameView.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /FirstController HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 16:50:29 [error] 3356#1440: *227 FastCGI sent in stderr: "PHP Warning:  Undefined array key "difficulty" in E:\testWork\html\TestWork\src\View\Game\gameView.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /FirstController HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 16:53:10 [error] 3356#1440: *239 FastCGI sent in stderr: "PHP Warning:  Undefined array key "difficulty" in E:\testWork\html\TestWork\src\View\Game\gameView.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /FirstController HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 17:06:19 [error] 3356#1440: *244 FastCGI sent in stderr: "PHP Warning:  Undefined array key "difficulty" in E:\testWork\html\TestWork\src\View\Game\gameView.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /FirstController HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 17:15:32 [error] 3356#1440: *263 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "\TestWork\Controller\FirstController?difficulty=normal" not found in E:\testWork\html\TestWork\src\Core\Route.php:52
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(9): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 52" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /FirstController?difficulty=normal HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/FirstController"
+2022/06/21 17:16:26 [error] 3356#1440: *263 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "\TestWork\Controller\FirstController?difficulty=normal" not found in E:\testWork\html\TestWork\src\Core\Route.php:53
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(9): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /FirstController?difficulty=normal HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/FirstController"
+2022/06/21 17:17:33 [error] 3356#1440: *268 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "\TestWork\Controller\FirstController?difficulty=normal" not found in E:\testWork\html\TestWork\src\Core\Route.php:53
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(9): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /FirstController?difficulty=normal HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/FirstController"
+2022/06/21 17:17:52 [error] 3356#1440: *268 FastCGI sent in stderr: "PHP Fatal error:  Uncaught Error: Class "\TestWork\Controller\FirstController?difficulty=normal" not found in E:\testWork\html\TestWork\src\Core\Route.php:54
+Stack trace:
+#0 E:\testWork\html\TestWork\public\index.php(9): TestWork\Core\Route::start()
+#1 {main}
+  thrown in E:\testWork\html\TestWork\src\Core\Route.php on line 54" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /FirstController?difficulty=normal HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/FirstController"
+2022/06/21 17:20:08 [error] 3356#1440: *271 FastCGI sent in stderr: "PHP Warning:  Undefined array key "difficulty" in E:\testWork\html\TestWork\src\View\Game\gameView.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /firstcontroller HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 18:28:42 [error] 3356#1440: *313 FastCGI sent in stderr: "PHP Warning:  require_once(E:\testWork\html\TestWork\srcView/Authorization/authorization.php): Failed to open stream: No such file or directory in E:\testWork\html\TestWork\src\Controller\Auth.php on line 16
+PHP Fatal error:  Uncaught Error: Failed opening required 'E:\testWork\html\TestWork\srcView/Authorization/authorization.php' (include_path='.;C:\php\pear') in E:\testWork\html\TestWork\src\Controller\Auth.php:16
+Stack trace:
+#0 E:\testWork\html\TestWork\src\Core\Route.php(51): TestWork\Controller\Auth->authorization()
+#1 E:\testWork\html\TestWork\public\index.php(9): TestWork\Core\Route::start()
+#2 {main}
+  thrown in E:\testWork\html\TestWork\src\Controller\Auth.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /auth/authorization HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 18:28:57 [error] 3356#1440: *313 FastCGI sent in stderr: "PHP Warning:  require_once(E:\testWork\html\TestWork\srcView/Authorization/authorization.php): Failed to open stream: No such file or directory in E:\testWork\html\TestWork\src\Controller\Auth.php on line 16
+PHP Fatal error:  Uncaught Error: Failed opening required 'E:\testWork\html\TestWork\srcView/Authorization/authorization.php' (include_path='.;C:\php\pear') in E:\testWork\html\TestWork\src\Controller\Auth.php:16
+Stack trace:
+#0 E:\testWork\html\TestWork\src\Core\Route.php(49): TestWork\Controller\Auth->authorization()
+#1 E:\testWork\html\TestWork\public\index.php(9): TestWork\Core\Route::start()
+#2 {main}
+  thrown in E:\testWork\html\TestWork\src\Controller\Auth.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /auth/authorization HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 22:00:56 [notice] 4064#12956: signal process started
+2022/06/21 22:02:39 [notice] 13104#2528: signal process started
+2022/06/21 22:02:49 [notice] 1788#7604: signal process started
+2022/06/21 22:02:49 [error] 1788#7604: CreateFile() "E:\testWork/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2022/06/21 22:11:26 [notice] 6892#2756: signal process started
+2022/06/21 22:14:36 [notice] 12244#10516: signal process started
+2022/06/21 22:17:32 [notice] 10148#12232: signal process started
+2022/06/21 22:17:42 [notice] 4584#1128: signal process started
+2022/06/21 22:17:42 [error] 4584#1128: CreateFile() "E:\testWork/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2022/06/21 22:17:51 [error] 10620#2588: *1 rewrite or internal redirection cycle while internally redirecting to "/baseView.php", client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2022/06/21 22:17:53 [error] 10620#2588: *2 rewrite or internal redirection cycle while internally redirecting to "/baseView.php", client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2022/06/21 22:20:57 [error] 10620#2588: *3 rewrite or internal redirection cycle while internally redirecting to "/baseView.php", client: 127.0.0.1, server: localhost, request: "GET /firstcontroller HTTP/1.1", host: "localhost"
+2022/06/21 22:22:08 [error] 10620#2588: *4 rewrite or internal redirection cycle while internally redirecting to "/baseView.php", client: 127.0.0.1, server: localhost, request: "GET /firstcontroller HTTP/1.1", host: "localhost"
+2022/06/21 22:22:18 [notice] 10656#1256: signal process started
+2022/06/21 22:24:14 [notice] 5904#6284: signal process started
+2022/06/21 22:24:19 [notice] 5316#3188: signal process started
+2022/06/21 22:24:19 [error] 5316#3188: CreateFile() "E:\testWork/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2022/06/21 22:30:08 [notice] 11952#2832: signal process started
+2022/06/21 22:30:16 [error] 12712#3748: *1 rewrite or internal redirection cycle while internally redirecting to "/baseView.php", client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2022/06/21 22:32:06 [notice] 3900#12452: signal process started
+2022/06/21 22:32:10 [error] 776#4456: *1 rewrite or internal redirection cycle while internally redirecting to "/baseView.php", client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2022/06/21 22:33:31 [notice] 1908#7460: signal process started
+2022/06/21 22:33:36 [error] 9240#1616: *1 FastCGI sent in stderr: "PHP Warning:  require_once(E:\testWork\html\TestWork\src/View/index.php): Failed to open stream: No such file or directory in E:\testWork\html\TestWork\src\Controller\MainController.php on line 16
+PHP Fatal error:  Uncaught Error: Failed opening required 'E:\testWork\html\TestWork\src/View/index.php' (include_path='.;C:\php\pear') in E:\testWork\html\TestWork\src\Controller\MainController.php:16
+Stack trace:
+#0 E:\testWork\html\TestWork\src\Core\Route.php(49): TestWork\Controller\MainController->index()
+#1 E:\testWork\html\TestWork\public\index.php(9): TestWork\Core\Route::start()
+#2 {main}
+  thrown in E:\testWork\html\TestWork\src\Controller\MainController.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 22:37:06 [error] 9240#1616: *6 FastCGI sent in stderr: "PHP Warning:  Undefined array key "login" in E:\testWork\html\TestWork\src\Controller\Auth.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /auth/reg HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 22:37:33 [error] 9240#1616: *6 FastCGI sent in stderr: "PHP Warning:  Undefined array key "login" in E:\testWork\html\TestWork\src\Controller\Auth.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /auth/reg HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 22:38:07 [error] 9240#1616: *6 FastCGI sent in stderr: "PHP Warning:  Undefined array key "login" in E:\testWork\html\TestWork\src\Controller\Auth.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /auth/reg HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 22:38:42 [error] 9240#1616: *6 FastCGI sent in stderr: "PHP Warning:  Undefined array key "login" in E:\testWork\html\TestWork\src\Controller\Auth.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /auth/reg HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 22:39:01 [error] 9240#1616: *6 FastCGI sent in stderr: "PHP Warning:  Undefined array key "login" in E:\testWork\html\TestWork\src\Controller\Auth.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /auth/reg HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 22:40:04 [error] 9240#1616: *6 FastCGI sent in stderr: "PHP Warning:  Undefined array key "login" in E:\testWork\html\TestWork\src\Controller\Auth.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /auth/reg HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 22:41:22 [error] 9240#1616: *6 FastCGI sent in stderr: "PHP Warning:  Undefined array key "login" in E:\testWork\html\TestWork\src\Controller\Auth.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /auth/reg HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 22:41:38 [error] 9240#1616: *6 FastCGI sent in stderr: "PHP Warning:  Undefined array key "repeatPassword" in E:\testWork\html\TestWork\src\Controller\Auth.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "POST /auth/reg HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/auth/register"
+2022/06/21 22:44:30 [error] 9240#1616: *57 FastCGI sent in stderr: "PHP Warning:  Undefined array key "repeatPassword" in E:\testWork\html\TestWork\src\Controller\Auth.php on line 27" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "POST /auth/reg HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/auth/register"
+2022/06/21 22:45:08 [error] 9240#1616: *57 FastCGI sent in stderr: "PHP Warning:  Undefined array key "repeatPassword" in E:\testWork\html\TestWork\src\Controller\Auth.php on line 27" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "POST /auth/reg HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost", referrer: "http://localhost/auth/register"
+2022/06/21 22:46:04 [error] 9240#1616: *57 FastCGI sent in stderr: "PHP Warning:  Undefined array key "login" in E:\testWork\html\TestWork\src\Controller\Auth.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /auth/reg HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2022/06/21 22:47:11 [error] 9240#1616: *57 FastCGI sent in stderr: "PHP Warning:  Undefined array key "login" in E:\testWork\html\TestWork\src\Controller\Auth.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: localhost, request: "GET /auth/reg HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"

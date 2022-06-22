@@ -8,11 +8,11 @@ class FirstController implements Controller
 {
     public function __construct()
     {
-        echo "loool";
+
     }
 
     public function index()
     {
-
+        require_once dirname(__DIR__) . "/View/Game/gameView.php";
     }
 }

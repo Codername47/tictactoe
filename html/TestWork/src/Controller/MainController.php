@@ -13,6 +13,6 @@ class MainController implements Controller
 
     public function index()
     {
-        require_once dirname(__DIR__)."/View/index.php";
+        require_once dirname(__DIR__) . "/View/baseView.php";
     }
 }

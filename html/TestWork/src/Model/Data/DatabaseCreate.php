@@ -33,8 +33,6 @@ class DatabaseCreate
     }
     private function createTables()
     {
-        echo '1';
-
         $queries = DBInfo::getInfo()['queries'];
         $tables = DBInfo::getInfo()['tables'];
         foreach ($queries as $query)
